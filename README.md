@@ -17,7 +17,7 @@ This application is a C# console application that integrates speech features to 
 <img src="ascii-art-text.png"/>
 
 ## Successful GitHub Actions Build
-<img src=""/>
+<img src="Screenshot 2026-03-26 141020.png"/>
 
 ## Upcoming feautures
 * Windows Presentation Framework (WPF) User interface
