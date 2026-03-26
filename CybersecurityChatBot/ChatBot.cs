@@ -11,6 +11,15 @@ namespace CybersecurityChatBot
     {
         public string UserName { get; set; }
 
+        public void Start()
+        {
+            Console.Title = "Cybersecurity Awareness Bot";
+            PlayGreeting();
+            ShowAsciiArt();
+            GetUserName();
+            ChatLoop();
+        }
+
         private void PlayGreeting()
         {
             try

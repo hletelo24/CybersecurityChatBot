@@ -1,7 +1,10 @@
-﻿internal class Program
+﻿using CybersecurityChatBot;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        ChatBot bot = new ChatBot();
+        bot.
     }
 }
