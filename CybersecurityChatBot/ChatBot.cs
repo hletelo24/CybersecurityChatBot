@@ -49,5 +49,28 @@ namespace CybersecurityChatBot
 ");
             Console.ResetColor();
         }
+
+        private void GetUserName()
+        {
+            Console.Write("Enter your name: ");
+            UserName = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(UserName))
+            {
+                UserName = "User";
+            }
+
+            TypeText($"\nHello {UserName}! Welcome to Cybersecurity Awareness Bot.\n");
+        }
+
+        private void TypeText(string message)
+        {
+            foreach (char c in message)
+            {
+                Console.Write(c);
+                Thread.Sleep(20);
+            }
+            Console.WriteLine();
+        }
     }
 }
