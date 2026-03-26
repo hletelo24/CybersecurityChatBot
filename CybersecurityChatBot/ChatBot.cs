@@ -63,6 +63,67 @@ namespace CybersecurityChatBot
             TypeText($"\nHello {UserName}! Welcome to Cybersecurity Awareness Bot.\n");
         }
 
+        //main chat loop where the user can ask questions and get responses
+        private void ChatLoop()
+        {
+            while (true)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("\nYou: ");
+                Console.ResetColor();
+
+                string input = Console.ReadLine().ToLower();
+
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    TypeText("Please enter something.");
+                    continue;
+                }
+
+                if (input.Contains("exit"))
+                {
+                    TypeText("Goodbye! Stay safe online!");
+                    break;
+                }
+
+                Respond(input);
+            }
+        }
+
+        private void Respond(string input)
+        {
+
+            switch (input)
+            {
+                case var s when s.Contains("how are you"):
+                    TypeText("I'm just a bot, but I'm here to keep you safe online! 😊");
+                    break;
+                case var s when s.Contains("purpose"):
+                    TypeText("My purpose is to educate you about cybersecurity and keep you safe online.");
+                    break;
+
+                case var s when s.Contains("ask"):
+                    TypeText("You can ask me about:\n- Password safety\n- Phishing\n- Safe browsing");
+                    break;
+
+                case var s when s.Contains("password"):
+                    TypeText("Use strong passwords with letters, numbers, and symbols. Never share them!");
+                    break;
+
+                case var s when s.Contains("phishing"):
+                    TypeText("Be careful of fake emails asking for personal info. Always verify the sender.");
+                    break;
+
+                case var s when s.Contains("safe browsing"):
+                    TypeText("Only visit secure websites (https) and avoid clicking suspicious links.");
+                    break;
+                default:
+                    TypeText("I didn’t understand that. Try asking about cybersecurity topics.");
+                    break;
+            }
+
+        }
+
         private void TypeText(string message)
         {
             foreach (char c in message)
