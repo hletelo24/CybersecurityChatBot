@@ -25,7 +25,7 @@ namespace CybersecurityChatBot
             try
             {
                 //Use of SoundPlayer to play a greeting audio file
-                SoundPlayer player = new SoundPlayer("repos\\CyberSecurityChatbot\\greeting.wav");
+                SoundPlayer player = new SoundPlayer("C:\\Users\\Student\\source\\repos\\CybersecurityChatBot\\greeting.wav");
                 player.PlaySync();
             }
             catch
