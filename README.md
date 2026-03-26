@@ -18,7 +18,7 @@ This application is a C# console application that integrates speech features to 
 
 ## Successful GitHub Actions Build
 The image below shows the successful run and execution of the dotnet.yml file that was used to run the CI workflow. This workflow builds and tests the appliction. 
-<img src="Screenshot 2026-03-26 141020.png"/>
+<img src="Screenshot (3).png"/>
 
 ## Upcoming feautures
 * Windows Presentation Framework (WPF) User interface
