@@ -17,6 +17,7 @@ This application is a C# console application that integrates speech features to 
 <img src="ascii-art-text.png"/>
 
 ## Successful GitHub Actions Build
+The image below shows the successful run and execution of the dotnet.yml file that was used to run the CI workflow. This workflow builds and tests the appliction. 
 <img src="Screenshot 2026-03-26 141020.png"/>
 
 ## Upcoming feautures
